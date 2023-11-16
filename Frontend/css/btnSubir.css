@@ -1,0 +1,33 @@
+
+/* Botão p/subir */
+.btn-subir{
+    background-color: #ffffff00;
+    width: 18%;
+    margin-left: auto;
+    padding-right: 5%;
+    margin-top: 10%;
+    z-index: 99;
+}
+.progressao{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    
+}
+.valor_progressao{
+    display: block;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    color: #212121;
+}

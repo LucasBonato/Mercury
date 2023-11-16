@@ -1,0 +1,94 @@
+@import url(css/geral.css);
+
+/* MAIN */
+:root{
+    --linha: 4px;
+    --titulo: 1.2rem;
+    --texto: .9rem;
+    --cor-principal: #EC3540; 
+    --Audiowide: 'Audiowide', sans-serif;
+    --Arimo: 'Arimo', sans-serif;
+    --Asap: 'Asap', sans-serif;
+    --Padauk: 'Padauk', sans-serif;
+    --Poppins: 'Poppins', sans-serif
+}
+
+.img-HeaderC{
+    width: 65%;
+    margin-left: 18%;
+    margin-top: 10%;
+    visibility: visible;
+}
+body.dark .cabecalhoC{
+    visibility: hidden;
+}
+.cabecalhoE{
+    margin-top: -11%;
+    visibility: hidden;
+}
+.img-HeaderE{
+    width: 60%;
+    margin-left: 20%;
+}
+body.dark .cabecalhoE{
+    visibility: visible;
+}
+
+/* Parágrafo */
+.paragrafo{
+    width: 95%;
+    margin-left: auto;
+    padding-right: 5%;
+    letter-spacing: 0.05rem;
+    margin-top: 10%;
+}
+body.dark .paragrafo{
+    color: #eaeaea;
+}
+.p1,.p2{
+    font-family: var(--Poppins);
+    font-weight: 500;
+    font-size: var(--texto);
+    margin-top: 5%;
+}
+.p1{
+    margin-top: 8%;
+}
+.mercury{
+    color: var(--cor-principal);
+}
+
+/* Imagem */
+.img-Carro{
+    width: 100%;
+    height: 23vh;
+    margin-top: 10%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, .5);
+}
+.linha{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    margin-top: 10%;
+}
+.l3{
+    background-color: var(--cor-principal);
+    height: var(--linha);
+    color: #ffffff00;
+    width: 75%;
+}
+
+/* Slide */
+.txt-Fornecedores{
+    font-size: 1rem;
+    font-family: var(--Audiowide);
+    color: #6C6666;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    padding-right: 5%;
+}
+
+
