@@ -1,0 +1,359 @@
+
+/* MAIN */
+:root{
+    --cor-principal: #EC3540; 
+    --Audiowide: 'Audiowide', sans-serif;
+    --Arimo: 'Arimo', sans-serif;
+    --Asap: 'Asap', sans-serif;
+    --Padauk: 'Padauk', sans-serif;
+    --Poppins: 'Poppins', sans-serif
+}
+
+body{
+    text-align: center;
+}
+
+.img-HeaderC{
+    width: 65%;
+    margin-top: 10%;
+    visibility: visible;
+}
+body.dark .cabecalhoC{
+    opacity: 0;
+    visibility: hidden;
+}
+.cabecalhoE{
+    margin-top: -12%;
+    visibility: hidden;
+}
+.img-HeaderE{
+    width: 65%;
+}
+body.dark .cabecalhoE{
+    visibility: visible;
+}
+
+/* Slider */
+.container-slider{
+    display: none;
+}
+
+/* Título */
+.titulo{
+    display: none;
+}
+
+/* Parágrafo */
+.paragrafo{
+    width: 95%;
+    margin-left: auto;
+    padding-right: 5%;
+    letter-spacing: 0.05rem;
+    margin-top: 10%;
+    text-align: left;
+}
+.mercury{
+    font-weight: 800;
+}
+body.dark .paragrafo{
+    color: #eaeaea;
+}
+.p1,.p2{
+    font-family: var(--Poppins);
+    font-weight: 500;
+    font-size: .9rem;
+    margin-top: 5%;
+}
+.p1{
+    margin-top: 8%;
+}
+.mercury{
+    color: var(--cor-principal);
+}
+
+/* Imagem */
+.carro{
+    width: 95%;
+    margin-left: auto;
+    padding-right: 5%;
+}
+.img-Carro{
+    width: 100%;
+    height: 23vh;
+    margin-top: 10%;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, .5);
+}
+.linha{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    margin-top: 10%;
+}
+.l3{
+    background-color: var(--cor-principal);
+    height: 4px;
+    color: #ffffff00;
+    width: 75%;
+}
+
+/* Slide */
+.txt-Fornecedores{
+    font-size: 1rem;
+    font-family: var(--Audiowide);
+    color: #6C6666;
+    text-align: center;
+    width: 95%;
+    margin-left: auto;
+    padding-right: 5%;
+}
+body.dark .txt-Fornecedores{
+    color: #b4b3b3;
+}
+
+@media only screen and (min-width: 375px){
+    .paragrafo{
+        width: 92.5%;
+    }
+    .img-Carro{
+        width: 95%;
+        height: 25vh;
+        margin-left: 1%;
+    }
+}
+
+@media only screen and (min-width: 430px){
+    .paragrafo{
+        width: 90%;
+    }
+    .img-HeaderC{
+        width: 58%;
+    }
+    .img-HeaderE{
+        width: 58%;
+        margin-top: 1.8%;
+    }
+    .img-Carro{
+        width: 90%;
+        height: 25vh;
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    
+    .img-HeaderC{
+        width: 50%;
+    }
+    .img-HeaderE{
+        width: 50%;
+        margin-top: 3.5%;
+    }
+    .titulo{
+        display: flex;
+        flex-direction: row;
+        width: 95%;
+        margin-left: auto;
+        padding-right: 2.5%;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+    }
+    body.dark .titulo{
+        color: #fff;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-family: var(--Audiowide);
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .l1{
+        background: var(--cor-principal);
+        color: #ffffff00;
+        width: 50%;
+        height: 5px;
+    }
+    .l2{
+        background: var(--cor-principal);
+        color: #ffffff00;
+        width: 50%;
+        height: 5px;
+    }
+    .paragrafo{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        padding-right: 2.5%;
+        letter-spacing: 0.05rem;
+        margin-top: 5%;
+    }
+    .ps{
+        display: flex;
+        flex-direction: row;
+    }
+    .p1,.p2{
+        font-size: 1.1rem;
+        margin-top: 0%;
+    }
+    .p1{
+        margin-top: 0%;
+        margin-left: 1.5%;
+    }
+    .p2{
+        margin-left: 2%;
+    }
+    .carro{
+        padding-right: 2.5%;
+        text-align: center;
+        margin-top: -2.5%;
+        margin-left: auto;
+    }
+    .img-Carro{
+        width: 55%;
+        margin-left: 0%;
+    }
+    .l3{
+        background-color: var(--cor-principal);
+        height: 4px;
+        color: #ffffff00;
+        width: 65%;
+        margin-left: 3.5%;
+        margin-top: -2.5%;
+    }
+    .txt-Fornecedores{
+        font-size: 1.3rem;
+        text-align: center;
+        width: 95%;
+        margin-left: auto;
+        padding-right: 2.55%;
+        margin-left: 6%;
+    }
+}
+
+@media only screen and (min-width: 800px){
+    .p2{
+        margin-left: 2.5%;
+    }
+    .img-Carro{
+        width: 60%;
+        height: 0%;
+    }
+}
+
+@media only screen and (min-width: 820px){
+    .titulo{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .paragrafo{
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .p1{
+        margin-left: 1%;
+    }
+    .p2{
+        margin-left: 2.5%;
+    }
+    .img-Carro{
+        width: 60%;
+    }
+    .txt-Fornecedores{
+        margin-left: 7%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .img-HeaderC{
+        width: 30%;
+    }
+    .cabecalhoC{
+        margin-top: -5%;
+        visibility: hidden;
+    }
+    .cabecalhoE{
+        margin-top: -5%;
+        visibility: hidden;
+    }
+    .img-HeaderE{
+        width: 30%;
+        margin-top: -.1%;
+    }
+
+    .titulo{
+        margin-right: 2.5%;
+    }
+    .title{
+        font-size: 1.5rem;
+        font-family: var(--Audiowide);
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-left: 0%;
+    }
+    .l1{
+        background: var(--cor-principal);
+        color: #ffffff00;
+        width: 100%;
+        height: 5px;
+    }
+    .l2{
+        background: var(--cor-principal);
+        color: #ffffff00;
+        width: 100%;
+        height: 5px;
+    }
+
+
+    .paragrafo{
+        display: flex;
+        flex-direction: row;
+        width: 100%; 
+        margin-left: 2.5%;
+        padding-right: 2.5%;
+        letter-spacing: 0.05rem;
+        margin-top: 5%;
+    }
+    .ps{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 2%;
+
+    }
+    .p1{
+        margin-left: 0%;
+    }
+    .p2{
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+    .carro{
+        width: 50%; 
+        padding-right: 2.5%;
+        text-align: center;
+        margin-top: -2.5%;
+        margin-left: 0%;
+    }
+    .img-Carro{
+        width: 70%;
+        height: 40vh;
+        margin-left: 0%;
+    }
+    .l3{
+        width: 50%;
+        margin-left: -1%;
+    }
+
+    .txt-Fornecedores{
+        font-size: 1.2rem;
+        margin-left: 3.5%;
+    }
+
+}
+
+

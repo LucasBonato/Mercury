@@ -3,69 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/geral_navbar.css">
-    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+    <link rel="stylesheet" type="text/css" href="css/geral_navbar.css">
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="Icons/Favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Icons/Favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Icons/Favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!--Favicon-->
     <title>Mercury</title>
     
 </head>
 <body>
+    <!--BARRA DE NAVEGAÇÃO-->
     <nav class="navbar fechar">
-
-
-        <header>
+        <section>
             <div class="img-txt">
                 <span class="img">
                     <img src="Image/LogoSomente.png" alt="logo" class="logo">
                 </span>
-
                 <div class="txt empresa">
                     <span class="nome">Mercury</span>
                     <span class="slogan">slogan</span>
                 </div>
             </div>
-
             <i class="bx bx-chevron-right alternar"></i>
-        </header>
-
-
-
+        </section>
+        <!--Botões-->
         <div class="menu-bar">
             <div class="menu">
+                <!--Links-->
                 <ul class="menu-link">
+                    <!--Home-->
                     <li class="nav-link">
-                        <a href="">
-                            <i class="bx bx-home-alt icon"></i>
+                        <a href="" class="mercury">
+                            <i class="bx bx-home-alt icon "></i>
                             <span class="txt nav-text">Mercury</span>
                         </a>
                     </li>
-
+                    <!--Veículos-->
                     <li class="nav-link">
-                        <a href="">
-                            <i class='bx bx-car icon'></i>
-                            <span class="txt nav-text">Carros</span>
+                        <a href="" class="veiculos">
+                            <i class='bx bx-car icon '></i>
+                            <span class="txt nav-text">Veículos</span>
                         </a>
                     </li>
-
+                    <!--Aparelhos-->
                     <li class="nav-link">
-                        <a href="">
-                            <i class='bx bx-wrench icon'></i>
+                        <a href="" class="aparelhos">
+                            <i class='bx bx-wrench icon '></i>
                             <span class="txt nav-text">Aparelhos</span>
                         </a>
                     </li>
-
-                    <li class="nav-link">
-                        <a href="">
-                            <i class='bx bx-user icon'></i>
+                    <!--Login-->
+                    <li class="nav-link" >
+                        <a href="" class="login">
+                            <i class='bx bx-user icon '></i>
                             <span class="txt nav-text">Login</span>
                         </a>
                     </li>
                 </ul>
             </div>
-
+            <!--Alternar modo (claro/escuro)-->
             <div class="claro-escuro">
                 <ul>
                     <li class="modo">
@@ -81,81 +80,197 @@
                     </li>
                 </ul>
             </div>
-
         </div>
-
     </nav>
 
     <section class="home">
         <!--HEADER-->
+        <!--Logo modo claro-->
         <header class="cabecalhoC">
             <img src="Image/Logo Cliente.png" alt="Logo" class="img-HeaderC">
         </header> 
+        <!--Logo modo escuro-->
         <header class="cabecalhoE">
             <img src="Image/LogoClienteEscuro.png" alt="Logo" class="img-HeaderE">
         </header> 
 
         <!--MAIN-->
         <main class="corpo">
-            <!--Parágrafo-->
-            <section class="paragrafo">
-                <p class="p1">A <span class="mercury">Mercury</span> é um estabelecimento especializado na venda de veículos esportivos de alto desempenho, 
-                    projetados para oferecer uma experiência de condução emocionante e potência excepcional. 
-                    Somos o destino para entusiastas do alto desempenho automotivo, 
-                    atendendo às expectativas daqueles que procuram adrenalina e sofisticação.</p>
-
-                <p class="p2">Nossos vendedores  e consultores possuem amplo conhecimento sobre os nossos veículos, suas caracterísitcas, 
-                    técnicas e desempenho. São especialistas capacitados para orientar nossos clientes na escolha de seu novo carro, 
-                    buscando sempre atender as suas necessidades e desejos.</p>
-                <!--imagem-->
-                <img src="Image/Carro1.jpg" alt="Carro" class="img-Carro">
-                <div class="linha">
-                    <span class="l3">t</span>
+            <!--Slide-->
+            <section class="container-slider">
+                <div class="slider" id="slider">
+                    <div class="slider-section"><img src="Image/Carros/carro1.png" alt="Audi R8" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro2.png" alt="BMW 330i" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro3.png" alt="Bugatti Veyron" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro4.png" alt="Ferrari 812" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro5.png" alt="Jaguar FType" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro6.png" alt="Lamborghini Hurucan" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro7.png" alt="Mercedes AMGCLA45s" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro8.png" alt="Mercedes AMGGT63" class="slider-img"></div>
+                    <div class="slider-section"><img src="Image/Carros/carro9.png" alt="Porsche 768Cayman" class="slider-img"></div>
+                </div>
+                
+                <div class="btns">
+                    <i class='bx bx-chevrons-right btn' id="dir"></i> 
+                    <i class='bx bx-chevrons-left btn' id="esq"></i> 
                 </div>
             </section>
+            <!--Título-->
+            <section class="titulo">
+                <span class="l1">t</span>
+                    <h1 class="title">MERCURY</h1>
+                <span class="l2">t</span>
+            </section>
+            <!--Parágrafo-->
+            <section class="paragrafo">
+                <div class="ps">
+                    <p class="p1">A <span class="mercury">Mercury</span> é um estabelecimento especializado na venda de veículos esportivos de alto desempenho, 
+                        projetados para oferecer uma experiência de condução emocionante e potência excepcional. 
+                        Somos o destino para entusiastas do alto desempenho automotivo, 
+                        atendendo às expectativas daqueles que procuram adrenalina e sofisticação.</p>
 
+                    <p class="p2">Nossos vendedores  e consultores possuem amplo conhecimento sobre os nossos veículos, suas caracterísitcas, 
+                        técnicas e desempenho. São especialistas capacitados para orientar nossos clientes na escolha de seu novo carro, 
+                        buscando sempre atender as suas necessidades e desejos.</p>
+                </div>    
+                <div class="carro">
+                    <img src="Image/Carro1.jpg" alt="Carro" class="img-Carro">
+                </div>
+            </section>
+            <!--imagem-->
+            <div class="linha">
+                <span class="l3">t</span>
+            </div>
+
+            <!--FORNECEDORES-->
             <!--Slide-->
             <h1 class="txt-Fornecedores">Nossos Fornecedores</h1> 
             <section class="slide">
                 <div class="container-slide">
-                    <div class="fornecedor"><img src="Image/Jaguar.png" alt="Jaguar" class="jaguar"></div>
-                    <div class="fornecedor"><img src="Image/Mercedes_Benz.png" alt="Mercedes_Benz" class="mercedes"></div>
-                    <div class="fornecedor"><img src="Image/Audi.png" alt="Audi" class="audi"></div>
-                    <div class="fornecedor"><img src="Image/Bmw.png" alt="Bmw" class="bmw"></div>
-                    <div class="fornecedor"><img src="Image/Ferrari.png" alt="Ferrari" class="ferrari"></div>
-                    <div class="fornecedor"><img src="Image/Lamborghini.png" alt="Lamborghini" class="lamborghini"></div>
-                    <div class="fornecedor"><img src="Image/Porsche.png" alt="Porsche" class="porsche"></div>
-                    <div class="fornecedor"><img src="Image/Bugatti.png" alt="Bugatti" class="bugatti"></div>
+                    <div class="fornecedor-slide"><img src="Image/Jaguar.png" alt="Jaguar" class="jaguar-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Mercedes_Benz.png" alt="Mercedes_Benz" class="mercedes-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Audi.png" alt="Audi" class="audi-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Bmw.png" alt="Bmw" class="bmw-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Ferrari.png" alt="Ferrari" class="ferrari-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Lamborghini.png" alt="Lamborghini" class="lamborghini-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Porsche.png" alt="Porsche" class="porsche-slide"></div>
+                    <div class="fornecedor-slide"><img src="Image/Bugatti.png" alt="Bugatti" class="bugatti-slide"></div>
+                </div>
+            </section>
+            <!--Fornecedores-->
+            <section class="fornecedores">
+                <div class="imagem">
+                    <div class="row">
+                        <div class="fornecedor"><img src="Image/Jaguar.png" alt="Jaguar" class="jaguar"></div>
+                        <div class="fornecedor espaco"><img src="Image/Mercedes_Benz.png" alt="Mercedes_Benz" class="mercedes"></div>
+                    </div>
+                    <div class="row">
+                        <div class="fornecedor"><img src="Image/Audi.png" alt="Audi" class="audi"></div>
+                        <div class="fornecedor espaco"><img src="Image/Bmw.png" alt="Bmw" class="bmw"></div>
+                    </div>
+                    <div class="row">
+                        <div class="fornecedor"><img src="Image/Ferrari.png" alt="Ferrari" class="ferrari"></div>
+                        <div class="fornecedor espaco"><img src="Image/Lamborghini.png" alt="Lamborghini" class="lamborghini"></div>
+                    </div> 
+                    <div class="row">
+                        <div class="fornecedor"><img src="Image/Porsche.png" alt="Porsche" class="porsche"></div>
+                        <div class="fornecedor espaco"><img src="Image/Bugatti.png" alt="Bugatti" class="bugatti"></div>
+                    </div>
+                </div>
+            </section>
+            <!--Fornecedores Desktop-->
+            <section class="fornecedores-desk">
+                <div class="imagem-desk">
+                    <div class="row-desk">
+                        <div class="fornecedor-desk"><img src="Image/Jaguar.png" alt="Jaguar" class="jaguar"></div>
+                        <div class="fornecedor-desk"><img src="Image/Mercedes_Benz.png" alt="Mercedes_Benz" class="mercedes"></div>
+                        <div class="fornecedor-desk"><img src="Image/Audi.png" alt="Audi" class="audi"></div>
+                        <div class="fornecedor-desk"><img src="Image/Bmw.png" alt="Bmw" class="bmw"></div>
+                    </div>
+                    <div class="row-desk">
+                        <div class="fornecedor-desk"><img src="Image/Ferrari.png" alt="Ferrari" class="ferrari"></div>
+                        <div class="fornecedor-desk"><img src="Image/Lamborghini.png" alt="Lamborghini" class="lamborghini"></div>
+                        <div class="fornecedor-desk"><img src="Image/Porsche.png" alt="Porsche" class="porsche"></div>
+                        <div class="fornecedor-desk"><img src="Image/Bugatti.png" alt="Bugatti" class="bugatti"></div>
+                    </div>
                 </div>
             </section>
         </main>
-
-
     </section>
 
+    <!--Botão subir-->
     <section class="btn-subir">
         <div class="progressao" id="progressao">
             <span class="valor_progressao" id="valor_progressao">&#x1F815;</span>
         </div>
     </section>
 
-    <footer class="rodape">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.3247730302483!2d-46.73036678880656!3d-23.520818578739412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1695296006530!5m2!1spt-BR!2sbr" 
-        allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="maps" class="maps"></iframe>
+    <!--FOOTER-->
+    <!--Mobile-->
+    <footer class="rodape-mobile">
+        <!--Maps-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.324773030249!2d-46.7303667895577!3d-23.520818578739394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1700239575261!5m2!1spt-BR!2sbr" 
+        allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="maps" class="maps-mobile"></iframe>
 
-        <div class="redes">
-            <a href="#"><img src="Icons/whatsapp.png" alt="WhatsApp" class="icon"></a>
-            <a href="#"><img src="Icons/instagram.png" alt="Instagram" class="icon"></a>
-            <a href="#"><img src="Icons/linkedin.png" alt="Linkedin" class="icon"></a>
+        <!--Redes sociais-->
+        <div class="redes-mobile">
+            <a href="#"><img src="Icons/whatsapp.png" alt="WhatsApp" class="icon-mobile"></a>
+            <a href="#"><img src="Icons/instagram.png" alt="Instagram" class="icon-mobile"></a>
+            <a href="#"><img src="Icons/linkedin.png" alt="Linkedin" class="icon-mobile"></a>
         </div>
 
-        <img src="Image/LogoClienteEscuro.png" alt="logo" class="img-Footer">
+        <!--Logo-->
+        <img src="Image/LogoClienteEscuro.png" alt="logo" class="img-Footer-mobile">
 
-        <p class="copy">@2023 - TechVerse</p>
+        <!--Copyright-->
+        <p class="copy-mobile">@2023 - TechVerse</p>
+    </footer>
+
+    <!--Tablet-->
+    <footer class="rodape-tablet">
+        <!--Logo-->
+        <img src="Image/LogoClienteEscuro.png" alt="logo" class="img-Footer-tablet">
+
+        <!--Redes sociais-->
+        <div class="redes-tablet">
+            <a href="#"><img src="Icons/whatsapp.png" alt="WhatsApp" class="icon-tablet"></a>
+            <a href="#"><img src="Icons/instagram.png" alt="Instagram" class="icon-tablet"></a>
+            <a href="#"><img src="Icons/linkedin.png" alt="Linkedin" class="icon-tablet"></a>
+        </div>
+
+        <!--Maps-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.324773030249!2d-46.7303667895577!3d-23.520818578739394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1700239575261!5m2!1spt-BR!2sbr" 
+        allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="maps" class="maps-tablet"></iframe>
+    
+        <!--Copyright-->
+        <p class="copy-tablet">@2023 - TechVerse</p>
+    </footer>
+
+    <!--Desktop-->
+    <footer class="rodape-desktop">
+        <div class="container-footer">
+            <!--Logo-->
+            <img src="Image/LogoClienteEscuro.png" alt="logo" class="img-Footer-desk">
+            <!--Copyright-->
+            <p class="copy-tablet">@2023 - TechVerse</p>
+        </div>
+
+        <!--Maps-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.324773030249!2d-46.7303667895577!3d-23.520818578739394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8c1d371ec31%3A0x671c9325c275132e!2sETEC%20Prof%C2%B0%20Basilides%20de%20Godoy!5e0!3m2!1spt-BR!2sbr!4v1700239575261!5m2!1spt-BR!2sbr" 
+        allowfullscreen="" referrerpolicy="no-referrer-when-downgrade" title="maps" class="maps-desk"></iframe>
+
+        <!--Redes sociais-->
+        <div class="redes-desk">
+            <a href="#"><img src="Icons/whatsapp.png" alt="WhatsApp" class="icon-desk"></a>
+            <a href="#"><img src="Icons/instagram.png" alt="Instagram" class="icon-desk"></a>
+            <a href="#"><img src="Icons/linkedin.png" alt="Linkedin" class="icon-desk"></a>
+        </div>
+    
     </footer>
 
     <!--SCRIPTS-->
     <script src="js/btnTop.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/slide_carros.js"></script>
 </body>
 </html>  
