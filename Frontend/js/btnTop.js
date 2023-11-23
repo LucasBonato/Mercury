@@ -9,7 +9,7 @@ let cvlScroll = () =>{
 
     let vlScroll = Math.round((posicao * 100 / altura));
 
-    if(posicao>100){
+    if(posicao > 100){
         progressao.style.display = "grid";
     }
     else{

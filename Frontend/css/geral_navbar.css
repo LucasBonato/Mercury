@@ -12,6 +12,7 @@
 /* ---------------------------------------------------------------------------------------------------------------- */
 
 
+/* Geral */
 *{
     padding: 0;
     margin: 0;
@@ -20,15 +21,6 @@
     scroll-behavior: smooth;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    background-color: #EBEBEB;
-}
-
-
-
-/* NAVBAR */
 :root{
     --body-color: #E4E9F7;
     --navbar-color: #FFF;
@@ -49,7 +41,7 @@ body{
     background: var(--body-color);
     transition: var(--tran-03);
 }
-
+/* Modo escuro */
 body.dark{
     --body-color: #18191A;
     --navbar-color: #242526;
@@ -60,12 +52,13 @@ body.dark{
 }
 
 
-/* === navbar */
+/* Barra de Navegação */
+/* Barra aberta */
 .navbar{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 101%;
     width: 200px;
     padding: 10px 10px;
     margin-top: -.5%;     
@@ -75,10 +68,13 @@ body.dark{
     font-family: 'Poppins', sans-serif;
 } 
 
+/* Barra fechada */
 .navbar.fechar{
     width: 80px;
     padding-left: 2.5%;
 }
+
+/* Texto aberto */
 .navbar .txt{
     font-size: 16px;
     font-weight: 500;
@@ -87,12 +83,13 @@ body.dark{
     white-space: nowrap;
     opacity: 1;
 }
+
+/* Texto fechado */
 .navbar.fechar .txt{
     opacity: 0;
 }
 
-
-
+/* Logo */
 .navbar .img{
     min-width: 60px;
     display: flex;
@@ -100,6 +97,7 @@ body.dark{
     justify-content: center;
 }
 
+/* Links */
 .navbar li{
     height: 50px;
     margin-top: 10px;
@@ -108,6 +106,7 @@ body.dark{
     align-items: center;
 }
 
+/* Icon links */
 .navbar li .icon{
     display: flex;
     align-items: center;
@@ -116,16 +115,18 @@ body.dark{
     font-size: 20px;
 }
 
+/* Icon e texto links */
 .navbar li .icon,
 .navbar li .txt{
     color: var(--text-color);
     transition: var(--tran-02);
 }
 
+/* logo */
 .navbar section{
     position: relative;
-
 }
+
 
 .navbar .img-txt .logo{
     width: 40px;
@@ -142,20 +143,24 @@ section .img-txt .empresa{
     flex-direction: column;
 }
 
+/* Container nome e slogan */
 .empresa{
     margin-left: 10%;
     margin-top: 5%;
 }
+/* nome */
 .empresa .nome{
     font-weight: 600;
     color: var(--text-color);
 }
+/* slogan */
 .empresa .slogan{
     margin-top: -2px;
     color: var(--text-color);
 
 }
 
+/* Abrir e fechar barra de navegação */
 .navbar section .alternar{
     position: absolute;
     top: 50%;
@@ -168,6 +173,7 @@ section .img-txt .empresa{
     align-items: center;
     justify-content: center;
     border-radius: 60%;
+    cursor: pointer;
     color: var(--navbar-color);
     font-size: 22px;
     transition: var(--tran-03);
@@ -185,7 +191,7 @@ body.dark .navbar section .alternar{
     margin-top: 35px;
 }
 
-
+/* Links */
 .navbar li a{
     height: 100%;
     width: 100%;
@@ -205,11 +211,13 @@ body.dark .navbar section .alternar{
     color: var(--navbar-color);
 }
 
+/* Links modo escuro */
 body.dark.navbar li a:hover .icon,
 body.dark.navbar li a:hover .txt{
     color: var(--text-color);
 }
 
+/* Barra */
 .navbar .menu-bar{
     height: calc(100% - 50px);
     display: flex;
@@ -217,12 +225,14 @@ body.dark.navbar li a:hover .txt{
     justify-content: space-between;
 }
 
+/* Switch */
 .menu-bar .modo{
     position: relative;
     border-radius: 6px;
     margin-bottom: 10%;
     background: var(--modo-color);
 }
+
 
 .menu-bar .modo .lua-sol{
     height: 50px;
@@ -294,6 +304,7 @@ body.dark .interruptor::before{
     visibility: hidden;
 }
 
+/* Main */
 .home{
     position: relative;
     left: 80px;
@@ -303,9 +314,11 @@ body.dark .interruptor::before{
 
 
 @media only screen and (min-width: 430px){
+    /* Barra fechada */
     .navbar.fechar{
         width: 85px;
     }
+    /* Icon Links */
     .navbar li .icon{
         min-width: 63px;
         font-size: 20px;
@@ -313,25 +326,32 @@ body.dark .interruptor::before{
 }
 
 @media only screen and (min-width: 768px){
+    /* Barra fechada */
     .navbar.fechar{
         width: 100px;
     }
+    /* Icon Links */
     .navbar li .icon{
         min-width: 70px;
         font-size: 25px;
     }
+    /* Container nome e slogan */
     .empresa{
         margin-top: 10%;
     }
+    /* Icon veiculos */
     .veiculos{
         margin-top: 50px;
     }
+    /* Icon aparelhos */
     .aparelhos{
         margin-top: 100px;
     }
+    /* Icon login */
     .login{
         margin-top: 150px;
     }
+    /* Texto aberto */
     .navbar .txt{
         font-size: 17px;
     }
@@ -344,34 +364,44 @@ body.dark .interruptor::before{
 }
 
 @media only screen and (min-width: 820px){
+    /* Barra aberta */
     .navbar{
         width: 225px;
     } 
+    /* Barra fechada */
     .navbar.fechar{
         width: 110px;
     }
+    /* Links */
     .navbar li a{
         height: 125%;
     }
+    /* Icon Links */
     .navbar li .icon{
         min-width: 78px;
         font-size: 25px;
     }
+    /* Container nome e slogan */
     .empresa{
         margin-top: 10%;
     }
+    /* Icon veiculos */
     .veiculos{
         margin-top: 50px;
     }
+    /* Icon aparelhos */
     .aparelhos{
         margin-top: 100px;
     }
+    /* Icon login */
     .login{
         margin-top: 150px;
     }
+    /* Texto aberto */
     .navbar .txt{
         font-size: 17px;
     }
+    /* Switch */   
     .alternar-interruptor .interruptor{
         margin-right: 15px;
     }
@@ -381,46 +411,52 @@ body.dark .interruptor::before{
 }
 
 @media only screen and (min-width: 1024px){
+    /* Barra aberta */
     .navbar{
         width: 300px;
         align-items: center;
         text-align: center;
         justify-content: center;
     } 
+    /* Barra fechada */
     .navbar.fechar{
         width: 90px;
     }
-
+    /* Logo barra fechada */
     .navbar.fechar .img-txt .logo{
         width: 40px;
         margin-right: 50px;
     }
+    /* Icon Links barra fechada */
     .navbar.fechar li .icon{
         min-width: 20px;
         font-size: 20px;
         margin-left: 13px;
     }
-
+    /* Links barra fechada*/
     .navbar.fechar li a{
         height: 40px;
         margin-left: -10px;
     }
+    /* Links */
     .navbar li a{
         height: 50px;
 
     }
+    /* Texto aberto */
     .navbar .txt{
         font-size: 15px;
     }
-
+    /* Container logo */
     .img-txt{
         margin-top: 10%;
         font-size: 50px;
     }
+    /* Container nome e slogan */
     .empresa{
         margin-top: 1%;
     }
-
+    /* Switch */
     .modo-txt{
         visibility:visible;
     }
