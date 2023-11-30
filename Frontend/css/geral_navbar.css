@@ -1,7 +1,8 @@
 /* CSS */
 @import url(header.css);
-@import url(main.css);
 @import url(login.css);
+@import url(veiculos.css);
+@import url(main.css);
 @import url(tablet_desktop/slide_carros.css);
 @import url(mobile/slide_fornecedores.css);
 @import url(footer.css);
@@ -71,7 +72,7 @@ body.dark{
 
 /* Barra fechada */
 .navbar.fechar{
-    width: 80px;
+    width: 75px;
     padding-left: 2.5%;
 }
 
@@ -105,6 +106,9 @@ body.dark{
     list-style: none;
     display: flex;
     align-items: center;
+}
+.navbar.fechar li{
+    width: 60px;
 }
 
 /* Icon links */
@@ -158,7 +162,21 @@ section .img-txt .empresa{
 .empresa .slogan{
     margin-top: -2px;
     color: var(--text-color);
-
+}
+.empresa{
+    margin-top: 10%;
+}
+/* Icon veiculos */
+.veiculos{
+    margin-top: 50px;
+}
+/* Icon aparelhos */
+/* .aparelhos{
+    margin-top: 100px;
+} */
+/* Icon login */
+.login{
+    margin-top: 100px;
 }
 
 /* Abrir e fechar barra de navegação */
@@ -313,7 +331,11 @@ body.dark .interruptor::before{
     transition: var(--tran-05);
 }
 
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
 
+/* Mobile 430PX */
 @media only screen and (min-width: 430px){
     /* Barra fechada */
     .navbar.fechar{
@@ -326,6 +348,11 @@ body.dark .interruptor::before{
     }
 }
 
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Tablet 768PX */
 @media only screen and (min-width: 768px){
     /* Barra fechada */
     .navbar.fechar{
@@ -336,21 +363,25 @@ body.dark .interruptor::before{
         min-width: 70px;
         font-size: 25px;
     }
+
+    .navbar.fechar li{
+        width: 70px;
+    }
     /* Container nome e slogan */
     .empresa{
         margin-top: 10%;
     }
     /* Icon veiculos */
     .veiculos{
-        margin-top: 50px;
-    }
-    /* Icon aparelhos */
-    .aparelhos{
         margin-top: 100px;
     }
+    /* Icon aparelhos */
+    /* .aparelhos{
+        margin-top: 100px;
+    } */
     /* Icon login */
     .login{
-        margin-top: 150px;
+        margin-top: 200px;
     }
     /* Texto aberto */
     .navbar .txt{
@@ -359,11 +390,19 @@ body.dark .interruptor::before{
     .alternar-interruptor .interruptor{
         margin-right: 7px;
     }
+    .navbar.fechar .menu-bar .modo{
+        margin-left: -5%;
+    }
     .menu-bar .modo{
         margin-bottom: 10%;
     }
 }
 
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Tablet 820PX */
 @media only screen and (min-width: 820px){
     /* Barra aberta */
     .navbar{
@@ -391,12 +430,12 @@ body.dark .interruptor::before{
         margin-top: 50px;
     }
     /* Icon aparelhos */
-    .aparelhos{
+    /* .aparelhos{
         margin-top: 100px;
-    }
+    } */
     /* Icon login */
     .login{
-        margin-top: 150px;
+        margin-top: 100px;
     }
     /* Texto aberto */
     .navbar .txt{
@@ -411,6 +450,11 @@ body.dark .interruptor::before{
     }
 }
 
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Desktop 1024PX */
 @media only screen and (min-width: 1024px){
     /* Barra aberta */
     .navbar{
@@ -438,11 +482,11 @@ body.dark .interruptor::before{
     .navbar.fechar li a{
         height: 40px;
         margin-left: -10px;
+        width: 47px;
     }
     /* Links */
     .navbar li a{
         height: 50px;
-
     }
     /* Texto aberto */
     .navbar .txt{
@@ -462,9 +506,23 @@ body.dark .interruptor::before{
         visibility:visible;
     }
     .alternar-interruptor .interruptor{
-        margin-right: 0px;
+        margin-right: 15%;
     }
     .navbar.fechar .menu-bar .modo{
+        margin-left: -48%;
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+/* ----------------------------------------------------------- */
+
+/* Desktop 1366PX */
+@media only screen and (min-width: 1366px){
+    .alternar-interruptor .interruptor{
         margin-right: 10%;
+    }
+    .navbar.fechar .menu-bar .modo{
+        margin-left: -55%;
     }
 }
