@@ -1,8 +1,12 @@
 // Validação dos dados para login
 let obrigatorioUsu = document.getElementById('obrigatorioUsu'),
+obrigatorioUsu_desk = document.getElementById('obrigatorioUsu-desk'),
 obrigatorioPwd = document.getElementById('obrigatorioPwd'),
+obrigatorioPwd_desk = document.getElementById('obrigatorioPwd-desk'),
 usuario = document.getElementById('usuario'),
+usuario_desk = document.getElementById('usuario-desk'),
 senha = document.getElementById('senha');
+senha_desk = document.getElementById('senha-desk');
 
 
 usuario.addEventListener("change", () =>{   
@@ -34,60 +38,31 @@ senha.addEventListener("change", () =>{
     }
 });
 
-
-
-// Mensagem de erro ao efetuar Login MOBILE / TABLET
-let login_facebook = document.getElementById('btn_facebook'),
-login_google = document.getElementById('btn_google'),
-login_apple = document.getElementById('btn_apple'),
-esqueciSenha = document.getElementById('esqueci'),
-login_entrar = document.getElementById('btn_entrar');
-
-login_facebook.addEventListener("click", () =>{
-    msgError();
-});
-login_google.addEventListener("click", () =>{
-    msgError();
-});
-login_apple.addEventListener("click", () =>{
-    msgError();    
-});
-esqueciSenha.addEventListener("click", () =>{
-    msgError();    
-});
-login_entrar.addEventListener("click", () =>{
-    msgError();    
+usuario_desk.addEventListener("change", () =>{   
+    if(usuario_desk.value.length == 0){
+        obrigatorioUsu_desk.style.display = "block";
+        obrigatorioUsu_desk.style.color = "#EC3540";
+        usuario_desk.style.borderColor = "#EC3540";
+    }
+    else if(usuario_desk.value.length >= 1)
+    {
+        obrigatorioUsu_desk.style.display = "none";
+        obrigatorioUsu_desk.style.color = "#000";
+        usuario_desk.style.borderColor = "#8F8F8F";
+    }
 });
 
-// Mensagem de erro ao efetuar Login DESKTOP
-let login_facebook_desk = document.getElementById('btn_facebook-desk'),
-login_google_desk = document.getElementById('btn_google-desk'),
-login_apple_desk = document.getElementById('btn_apple-desk'),
-esqueciSenha_desk = document.getElementById('esqueci-desk'),
-login_entrar_desk = document.getElementById('btn_entrar-desk');
 
-login_facebook_desk.addEventListener("click", () =>{
-    msgError();
+senha_desk.addEventListener("change", () =>{   
+    if(senha_desk.value.length == 0){
+        obrigatorioPwd_desk.style.display = "block";
+        obrigatorioPwd_desk.style.color = "#EC3540";
+        senha_desk.style.borderColor = "#EC3540";
+    }
+    else if(senha_desk.value.length >= 1)
+    {
+        obrigatorioPwd_desk.style.display = "none";
+        obrigatorioPwd_desk.style.color = "#000";
+        senha_desk.style.borderColor = "#8F8F8F";
+    }
 });
-login_google_desk.addEventListener("click", () =>{
-    msgError();
-});
-login_apple_desk.addEventListener("click", () =>{
-    msgError();    
-});
-esqueciSenha_desk.addEventListener("click", () =>{
-    msgError();    
-});
-login_entrar_desk.addEventListener("click", () =>{
-    msgError();    
-});
-
-function msgError(){
-    window.alert("Nosso sistema de login ainda está em desenvolvimento!\n" + "Agradeçemos a compreensão ;)"); 
-}
-
-function msgLogin(){
-    window.alert("Atenção! Para poder comprar é necessário estar logado."); 
-}
-
-window.onload = msgLogin;
