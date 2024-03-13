@@ -12,6 +12,8 @@
     <link rel="manifest" href="/site.webmanifest">
     <!--Favicon-->
     <title>Login</title>
+
+    <script type="module" src="Dark.js"></script>
 </head>
 <body>
     <!--BARRA DE NAVEGAÇÃO-->
@@ -83,157 +85,154 @@
     </nav>
 
 
-    <section class="home">
-        <!--HEADER-->
-        <!--Logo modo claro-->
-        <header class="cabecalhoC">
-            <img src="Image/Logo Cliente.png" alt="Logo" class="img-HeaderC">
-        </header> 
-        <!--Logo modo escuro-->
-        <header class="cabecalhoE">
-            <img src="Image/LogoClienteEscuro.png" alt="Logo" class="img-HeaderE">
-        </header> 
-    </section>    
-
-
-    <section class="home">
-        <img src="Image/fundoLoginDesk.png" alt="Fundo login" class="img-login">
-        <!-- Login Mobile e Tablet -->
-        <section class="lg">
-        
-            <form action="" class="login-container">
-                <h1 class="txt-login">Entre na sua conta ;)</h1>
-            
-                <!-- Badges -->
-                <section class="badges">
-                    <!-- Facebook -->
-                    <a href="#" class="bd-link">
-                        <div class="badge-facebook bd" id="btn_facebook">  
-                            <div class="opcoes-img"><img src="Icons/facebook.png" alt="facebook" class="facebook-img"></div>
-                            <div class="opcoes-txt"><p class="facebook-txt">Entrar com Facebook</p></div> 
-                        </div>
-                    </a>
-                    <!-- Google -->
-                    <a href="#" class="bd-link">
-                        <div class="badge-google bd" id="btn_google"> 
-                            <div class="opcoes-img"><img src="Icons/google.png" alt="google" class="google-img"></div>
-                            <div class="opcoes-txt"><p class="google-txt">Entrar com Google</p></div>
-                        </div>
-                    </a>
-                    <!-- Apple -->
-                    <a href="#" class="bd-link">
-                        <div class="badge-apple bd" id="btn_apple">
-                            <div class="opcoes-img"><img src="Icons/apple.png" alt="apple" class="apple-img"></div>
-                            <div class="opcoes-txt"><p class="apple-txt">Entrar com Apple</p></div>
-                        </div>
-                    </a>
-                </section>
-                
-                <!-- Divisão -->
-                <section class="OU">
-                    <span class="l1l">t</span>
-                        <h1 class="ou">OU</h1>
-                    <span class="l2l">t</span>
-                </section>
-                
-                <!-- Inputs -->
-                <section class="inputs">
-                    <!-- Usuário -->
-                    <div class="input-usuario">
-                        <input type="text" placeholder="Usuário" class="usuario" id="usuario" >
-                        <p class="obrigatorio" id="obrigatorioUsu">Campo obrigatorio<p>
-                    </div>
-                    <!-- Senha -->
-                    <div class="input-senha">
-                        <input type="text" placeholder="Senha" class="senha" id="senha">
-                        <p class="obrigatorio" id="obrigatorioPwd">Campo obrigatorio<p>
-                    </div>
-                    <!-- Esqueci senha -->
-                    <h1 class="esqueci" id="esqueci">Esqueci minha senha</h1>
-                </section>
-                
-                <!-- Entrar -->
-                <section class="entrar">
-                    <a href="#">
-                        <div class="btn-entrar" id="btn_entrar" >
-                            <h1 class="txt-entrar">Entrar</h1>
-                        </div>
-                    </a>
-                </section>
-            </form>
+    <main>
+        <section class="home">
+            <!--HEADER-->
+            <!--Logo modo claro-->
+            <header class="cabecalhoC">
+                <img src="Image/Logo Cliente.png" alt="Logo" class="img-HeaderC">
+            </header>
+            <!--Logo modo escuro-->
+            <header class="cabecalhoE">
+                <img src="Image/LogoClienteEscuro.png" alt="Logo" class="img-HeaderE">
+            </header>
         </section>
-
-        <!-- Login Desktop -->
-        <section class="lg-desk">
-            <img src="Image/fundoLoginDesk.png" alt="Fundo login" class="img-login-desk">
-
-            <form action="" class="login-container-desk">
-    
-                <div class="ladoEsq">
-                    <h1 class="txt-login-desk">Entre com suas redes sociais</h1>
+        <section class="home">
+            <img src="Image/fundoLoginDesk.png" alt="Fundo login" class="img-login">
+            <!-- Login Mobile e Tablet -->
+            <section class="lg">
+        
+                <form action="" class="login-container">
+                    <h1 class="txt-login">Entre na sua conta ;)</h1>
+        
                     <!-- Badges -->
-                    <section class="badges-desk">
+                    <section class="badges">
                         <!-- Facebook -->
-                        <a href="#" class="bd-link-desk">
-                            <div class="badge-facebook-desk bd-desk" id="btn_facebook-desk" >  
-                                <div class="opcoes-img-desk"><img src="Icons/facebook.png" alt="facebook" class="facebook-img-desk"></div>
-                                <div class="opcoes-txt-desk"><p class="facebook-txt-desk">Entrar com Facebook</p></div> 
+                        <a href="#" class="bd-link">
+                            <div class="badge-facebook bd" id="btn_facebook">
+                                <div class="opcoes-img"><img src="Icons/facebook.png" alt="facebook" class="facebook-img"></div>
+                                <div class="opcoes-txt"><p class="facebook-txt">Entrar com Facebook</p></div>
                             </div>
                         </a>
                         <!-- Google -->
-                        <a href="#" class="bd-link-desk">
-                            <div class="badge-google-desk bd-desk" id="btn_google-desk"> 
-                                <div class="opcoes-img-desk"><img src="Icons/google.png" alt="google" class="google-img-desk"></div>
-                                <div class="opcoes-txt-desk"><p class="google-txt-desk">Entrar com Google</p></div>
+                        <a href="#" class="bd-link">
+                            <div class="badge-google bd" id="btn_google">
+                                <div class="opcoes-img"><img src="Icons/google.png" alt="google" class="google-img"></div>
+                                <div class="opcoes-txt"><p class="google-txt">Entrar com Google</p></div>
                             </div>
                         </a>
                         <!-- Apple -->
-                        <a href="#" class="bd-link-desk">
-                            <div class="badge-apple-desk bd-desk" id="btn_apple-desk">
-                                <div class="opcoes-img-desk"><img src="Icons/apple.png" alt="apple" class="apple-img-desk"></div>
-                                <div class="opcoes-txt-desk"><p class="apple-txt-desk">Entrar com Apple</p></div>
+                        <a href="#" class="bd-link">
+                            <div class="badge-apple bd" id="btn_apple">
+                                <div class="opcoes-img"><img src="Icons/apple.png" alt="apple" class="apple-img"></div>
+                                <div class="opcoes-txt"><p class="apple-txt">Entrar com Apple</p></div>
                             </div>
                         </a>
                     </section>
-                </div>
         
-                <!-- Divisão -->
-                <section class="OU-desk">
-                    <span class="l1l-desk">t</span>
-                        <h1 class="ou-desk">OU</h1>
-                    <span class="l2l-desk">t</span>
-                </section>
+                    <!-- Divisão -->
+                    <section class="OU">
+                        <span class="l1l">t</span>
+                            <h1 class="ou">OU</h1>
+                        <span class="l2l">t</span>
+                    </section>
         
-                <div class="ladoDir">
-                    <h1 class="txt-login2-desk">Digite o seu <br> e-mail e senha</h1>
                     <!-- Inputs -->
-                    <section class="inputs-desk">
+                    <section class="inputs">
                         <!-- Usuário -->
-                        <div class="input-usuario-desk">
-                            <input type="text" placeholder="Usuário" class="usuario-desk" id="usuario-desk">
-                            <p class="obrigatorio-desk" id="obrigatorioUsu-desk" >Campo obrigatorio<p>
+                        <div class="input-usuario">
+                            <input type="text" placeholder="Usuário" class="usuario" id="usuario" >
+                            <p class="obrigatorio" id="obrigatorioUsu">Campo obrigatorio<p>
                         </div>
                         <!-- Senha -->
-                        <div class="input-senha-desk">
-                            <input type="text" placeholder="Senha" class="senha-desk" id="senha-desk">
-                            <p class="obrigatorio-desk" id="obrigatorioPwd-desk">Campo obrigatorio<p>
+                        <div class="input-senha">
+                            <input type="text" placeholder="Senha" class="senha" id="senha">
+                            <p class="obrigatorio" id="obrigatorioPwd">Campo obrigatorio<p>
                         </div>
                         <!-- Esqueci senha -->
-                        <h1 class="esqueci-desk" id="esqueci-desk" >Esqueci minha senha</h1>
+                        <h1 class="esqueci" id="esqueci">Esqueci minha senha</h1>
                     </section>
-
+        
                     <!-- Entrar -->
-                    <section class="entrar-desk">
+                    <section class="entrar">
                         <a href="#">
-                            <div class="btn-entrar-desk" id="btn_entrar-desk">
-                                <h1 class="txt-entrar-desk">Entrar</h1>
+                            <div class="btn-entrar" id="btn_entrar" >
+                                <h1 class="txt-entrar">Entrar</h1>
                             </div>
                         </a>
                     </section>
-                </div>
-            </form>
+                </form>
+            </section>
+            <!-- Login Desktop -->
+            <section class="lg-desk">
+                <img src="Image/fundoLoginDesk.png" alt="Fundo login" class="img-login-desk">
+                <form action="" class="login-container-desk">
+        
+                    <div class="ladoEsq">
+                        <h1 class="txt-login-desk">Entre com suas redes sociais</h1>
+                        <!-- Badges -->
+                        <section class="badges-desk">
+                            <!-- Facebook -->
+                            <a href="#" class="bd-link-desk">
+                                <div class="badge-facebook-desk bd-desk" id="btn_facebook-desk" >
+                                    <div class="opcoes-img-desk"><img src="Icons/facebook.png" alt="facebook" class="facebook-img-desk"></div>
+                                    <div class="opcoes-txt-desk"><p class="facebook-txt-desk">Entrar com Facebook</p></div>
+                                </div>
+                            </a>
+                            <!-- Google -->
+                            <a href="#" class="bd-link-desk">
+                                <div class="badge-google-desk bd-desk" id="btn_google-desk">
+                                    <div class="opcoes-img-desk"><img src="Icons/google.png" alt="google" class="google-img-desk"></div>
+                                    <div class="opcoes-txt-desk"><p class="google-txt-desk">Entrar com Google</p></div>
+                                </div>
+                            </a>
+                            <!-- Apple -->
+                            <a href="#" class="bd-link-desk">
+                                <div class="badge-apple-desk bd-desk" id="btn_apple-desk">
+                                    <div class="opcoes-img-desk"><img src="Icons/apple.png" alt="apple" class="apple-img-desk"></div>
+                                    <div class="opcoes-txt-desk"><p class="apple-txt-desk">Entrar com Apple</p></div>
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+        
+                    <!-- Divisão -->
+                    <section class="OU-desk">
+                        <span class="l1l-desk">t</span>
+                            <h1 class="ou-desk">OU</h1>
+                        <span class="l2l-desk">t</span>
+                    </section>
+        
+                    <div class="ladoDir">
+                        <h1 class="txt-login2-desk">Digite o seu <br> e-mail e senha</h1>
+                        <!-- Inputs -->
+                        <section class="inputs-desk">
+                            <!-- Usuário -->
+                            <div class="input-usuario-desk">
+                                <input type="text" placeholder="Usuário" class="usuario-desk" id="usuario-desk">
+                                <p class="obrigatorio-desk" id="obrigatorioUsu-desk" >Campo obrigatorio<p>
+                            </div>
+                            <!-- Senha -->
+                            <div class="input-senha-desk">
+                                <input type="text" placeholder="Senha" class="senha-desk" id="senha-desk">
+                                <p class="obrigatorio-desk" id="obrigatorioPwd-desk">Campo obrigatorio<p>
+                            </div>
+                            <!-- Esqueci senha -->
+                            <h1 class="esqueci-desk" id="esqueci-desk" >Esqueci minha senha</h1>
+                        </section>
+                        <!-- Entrar -->
+                        <section class="entrar-desk">
+                            <a href="#">
+                                <div class="btn-entrar-desk" id="btn_entrar-desk">
+                                    <h1 class="txt-entrar-desk">Entrar</h1>
+                                </div>
+                            </a>
+                        </section>
+                    </div>
+                </form>
+            </section>
         </section>
-    </section>      
+    </main>      
 
     <!--Botão subir-->
     <section class="btn-subir">
@@ -306,6 +305,7 @@
 
 
     <!--SCRIPTS-->
+    <script src="js/Dark.js"></script>
     <script src="js/btnTop.js"></script>
     <script src="js/navbar.js"></script>
     <script src="js/validacaoLogin.js"></script>
