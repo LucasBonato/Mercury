@@ -58,7 +58,7 @@ body.dark{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 101vh;
     width: 200px;
     padding: 10px 10px;
     background: var(--navbar-color);
