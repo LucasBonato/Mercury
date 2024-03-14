@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/geral_navbar.css">
+    <link rel="stylesheet" href="css/geral_navbar.css">
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="Icons/Favicon/apple-touch-icon.png">
@@ -13,7 +13,7 @@
     <!--Favicon-->
     <title>Veículos</title>
 
-    <script type="module" src="Dark.js"></script>
+    <script type="module" src="js/dark.js"></script>
 </head>
 <body>
 
@@ -50,13 +50,6 @@
                             <span class="txt nav-text">Veículos</span>
                         </a>
                     </li>
-                    <!--Aparelhos-->
-                    <!-- <li class="nav-link">
-                        <a href="" class="aparelhos">
-                            <i class='bx bx-wrench icon '></i>
-                            <span class="txt nav-text">Aparelhos</span>
-                        </a>
-                    </li> -->
                     <!--Login-->
                     <li class="nav-link" >
                         <a href="login.html" class="login">
@@ -98,284 +91,282 @@
                 <img src="Image/LogoClienteEscuro.png" alt="Logo" class="img-HeaderE">
             </header>
             <!--MAIN-->
-            <main class="corpo">
-                <section class="titulo">
-                    <span class="l1">t</span>
-                        <h1 class="title">VEÍCULOS</h1>
-                    <span class="l2">t</span>
-                </section>
-                <!-- MOBILE E DESKTOP -->
-                <!-- Cards1 -->
-                <section class="cards1">
-                    <!-- Card 1 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/JaguarFType.jpg" alt="JaguarFType" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Jaguar F-Type</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
-                                </div>
-                            </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">2.0 P300 GASOLINA R-DYNAMIC CABRIO AUTOMÁTICO</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic1">R$ 510,900</p>
-                                    <span class="l2-veic">t</span>
-                                </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
+            <section class="titulo">
+                <span class="l1">t</span>
+                    <h1 class="title">VEÍCULOS</h1>
+                <span class="l2">t</span>
+            </section>
+            <!-- MOBILE E DESKTOP -->
+            <!-- Cards1 -->
+            <section class="cards1">
+                <!-- Card 1 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/JaguarFType.jpg" alt="JaguarFType" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Jaguar F-Type</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
                             </div>
                         </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/MercedesAMGGT63.jpg" alt="Mercedes-AMG GT 63" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Mercedes-AMG GT 63</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic2">
-                                </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">2.0 P300 GASOLINA R-DYNAMIC CABIO AUTOMÁTICO</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic1">R$ 510,900</p>
+                                <span class="l2-veic">t</span>
                             </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">4.0 V8 TURBO GASOLINA S 4MATIC+ SPEEDSHIFT</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic2">R$ 1.850,000</p>
-                                    <span class="l2-veic">t</span>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
                                 </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Card 3 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/AudiR8.jpg" alt="Audi R8" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Audi R8</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
-                                </div>
-                            </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">5.2 FSI QUATTRO SPYDER V10 40V GASOLINA 2P R-TRONIC</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic1">R$ 769,999</p>
-                                    <span class="l2-veic">t</span>
-                                </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/MercedesAMGGT63.jpg" alt="Mercedes-AMG GT 63" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Mercedes-AMG GT 63</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
                             </div>
                         </div>
-                    </div>
-                </section>
-                <!-- Cards2 -->
-                <section class="cards2">
-                    <!-- Card 1 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/BMW330i.jpg" alt="BMW330i" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">BMW 330i</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
-                                </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">4.0 V8 TURBO GASOLINA S 4MATIC+ SPEEDSHIFT</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic2">R$ 1.850,000</p>
+                                <span class="l2-veic">t</span>
                             </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">2.0 16V TURBO GASOLINA M SPORT AUTOMÁTICO</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic1">R$ 319,800</p>
-                                    <span class="l2-veic">t</span>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
                                 </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Card 2 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/Ferrari812.jpg" alt="Ferrari 812 GTS" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Ferrari 812 GTS</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic1  lv3">
-                                </div>
-                            </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">6.5 V12 GASOLINA F1-DCT</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic2">R$ 7.700,000</p>
-                                    <span class="l2-veic">t</span>
-                                </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
+                </div>
+                <!-- Card 3 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/AudiR8.jpg" alt="Audi R8" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Audi R8</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
                             </div>
                         </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/LamborghiniHurucan.jpg" alt="Lamborghini Huracán" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Lamborghini Huracán</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic2">
-                                </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">5.2 FSI QUATTRO SPYDER V10 40V GASOLINA 2P R-TRONIC</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic1">R$ 769,999</p>
+                                <span class="l2-veic">t</span>
                             </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">5.2 V10 GASOLINA LP 640 STO LDF</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic2">R$ 4.890,000</p>
-                                    <span class="l2-veic">t</span>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
                                 </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                </section>
-                <!-- Cards3 -->
-                <section class="cards3">
-                    <!-- Card 1 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/Porsche768Cayman.jpeg" alt="Porsche 768 Cayman" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Porsche 768</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
-                                </div>
-                            </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">4.0 H6 GASOLINA CAYMAN GTS PDK</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic1">R$ 799,000</p>
-                                    <span class="l2-veic">t</span>
-                                </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
+                </div>
+            </section>
+            <!-- Cards2 -->
+            <section class="cards2">
+                <!-- Card 1 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/BMW330i.jpg" alt="BMW330i" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">BMW 330i</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
                             </div>
                         </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/BugattiVeyron.jpeg" alt="Bugatti Veyron" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Bugatti Veyron</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic1 lv3">
-                                </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">2.0 16V TURBO GASOLINA M SPORT AUTOMÁTICO</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic1">R$ 319,800</p>
+                                <span class="l2-veic">t</span>
                             </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">8.0 EB 16.4 64V TURBO GASOLINA 2P AUTOMÁTICO</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic2">R$ 10.000,000</p>
-                                    <span class="l2-veic">t</span>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
                                 </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <!-- Card 3 -->
-                    <div class="container">
-                        <div class="card">
-                            <!-- Parte da frente -->
-                            <div class="front">
-                                <img src="Image/Carros/Compra/MercedesAMGCLA45s.jpg" alt="Mercedes CLA 45 AMG" class="carro">
-                                <span class="l">t</span>
-                                <h3 class="nome-card">Mercedes CLA 45 AMG</h3>
-                                <div class="container-logo">
-                                    <img src="Image/LogoSomente.png" alt="" class="logo-veic2">
-                                </div>
-                            </div>
-                            <!-- Parte de trás -->
-                            <div class="back">
-                                <p class="descricao-veic">2.0 CGI GASOLINA S 4MATIC SPEEDSHIFT</p>
-                                <div class="container-preco">
-                                    <span class="l1-veic">t</span>
-                                    <p class="preco-veic2">R$ 499,500</p>
-                                    <span class="l2-veic">t</span>
-                                </div>
-        
-                                <a href="login.html">
-                                    <div class="btn-comprar" id="btn_comprar">
-                                        <h1 class="txt-comprar">COMPRAR</h1>
-                                    </div>
-                                </a>
+                </div>
+                <!-- Card 2 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/Ferrari812.jpg" alt="Ferrari 812 GTS" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Ferrari 812 GTS</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1  lv3">
                             </div>
                         </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">6.5 V12 GASOLINA F1-DCT</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic2">R$ 7.700,000</p>
+                                <span class="l2-veic">t</span>
+                            </div>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </section>
-            </main>
+                </div>
+                <!-- Card 3 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/LamborghiniHurucan.jpg" alt="Lamborghini Huracán" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Lamborghini Huracán</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
+                            </div>
+                        </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">5.2 V10 GASOLINA LP 640 STO LDF</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic2">R$ 4.890,000</p>
+                                <span class="l2-veic">t</span>
+                            </div>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Cards3 -->
+            <section class="cards3">
+                <!-- Card 1 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/Porsche768Cayman.jpeg" alt="Porsche 768 Cayman" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Porsche 768</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
+                            </div>
+                        </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">4.0 H6 GASOLINA CAYMAN GTS PDK</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic1">R$ 799,000</p>
+                                <span class="l2-veic">t</span>
+                            </div>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/BugattiVeyron.jpeg" alt="Bugatti Veyron" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Bugatti Veyron</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1 lv3">
+                            </div>
+                        </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">8.0 EB 16.4 64V TURBO GASOLINA 2P AUTOMÁTICO</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic2">R$ 10.000,000</p>
+                                <span class="l2-veic">t</span>
+                            </div>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="container">
+                    <div class="card">
+                        <!-- Parte da frente -->
+                        <div class="front">
+                            <img src="Image/Carros/Compra/MercedesAMGCLA45s.jpg" alt="Mercedes CLA 45 AMG" class="carro">
+                            <span class="l">t</span>
+                            <h3 class="nome-card">Mercedes CLA 45 AMG</h3>
+                            <div class="container-logo">
+                                <img src="Image/LogoSomente.png" alt="" class="logo-veic1">
+                            </div>
+                        </div>
+                        <!-- Parte de trás -->
+                        <div class="back">
+                            <p class="descricao-veic">2.0 CGI GASOLINA S 4MATIC SPEEDSHIFT</p>
+                            <div class="container-preco">
+                                <span class="l1-veic">t</span>
+                                <p class="preco-veic2">R$ 499,500</p>
+                                <span class="l2-veic">t</span>
+                            </div>
+    
+                            <a href="login.html">
+                                <div class="btn-comprar" id="btn_comprar">
+                                    <h1 class="txt-comprar">COMPRAR</h1>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
@@ -449,7 +440,6 @@
     </footer>
 
     <!--SCRIPTS-->
-    <script src="js/Dark.js"></script>
     <script src="js/btnTop.js"></script>
     <script src="js/navbar.js"></script>
 </body>

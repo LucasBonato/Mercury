@@ -1,5 +1,4 @@
 /* CSS */
-@import url(header.css);
 @import url(login.css);
 @import url(veiculos.css);
 @import url(main.css);
@@ -7,7 +6,6 @@
 @import url(mobile/slide_fornecedores.css);
 @import url(footer.css);
 @import url(btnSubir.css);
-@import url(navbar.css);
 
 /* FONTES */
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Asap&family=Audiowide&family=Padauk&family=Poppins:ital@0;1&display=swap');
@@ -33,7 +31,7 @@
 
     --tran-01: all 0.2s ease;
     --tran-03: all 0.3s ease;
-    --tran-04: all 0.4s ease;
+    --tran-04: 0.4s ease;
     --tran-05: all 0.5s ease;
 }
 
@@ -60,20 +58,18 @@ body.dark{
     position: fixed;
     top: 0;
     left: 0;
-    height: 101%;
+    height: 100vh;
     width: 200px;
     padding: 10px 10px;
-    margin-top: -.5%;     
     background: var(--navbar-color);
     transition: var(--tran-05);
-    z-index: 1;
+    z-index: 10;
     font-family: 'Poppins', sans-serif;
 } 
 
 /* Barra fechada */
 .navbar.fechar{
     width: 75px;
-    padding-left: 2.5%;
 }
 
 /* Texto aberto */
@@ -89,6 +85,34 @@ body.dark{
 /* Texto fechado */
 .navbar.fechar .txt{
     opacity: 0;
+    display: none;
+}
+
+.navbar.fechar .menu-link {
+    width: 100%;
+}
+
+.navbar.fechar .nav-link {
+    width: 100%;
+}
+
+.navbar.fechar .nav-link a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar.fechar .modo .lua-sol i, 
+.navbar.fechar .modo .modo-txt.txt span {
+    display: none;
+    opacity: 0;
+    transition: all .5s ease;
+}
+.navbar .modo .lua-sol i, 
+.navbar .modo .modo-txt.txt span {
+    display: block;
+    opacity: 1;
+    transition: all 5s ease;
 }
 
 /* Logo */
@@ -106,6 +130,7 @@ body.dark{
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .navbar.fechar li{
     width: 60px;
@@ -117,7 +142,6 @@ body.dark{
     align-items: center;
     justify-content: center;
     min-width: 60px;
-    font-size: 20px;
 }
 
 /* Icon e texto links */
@@ -179,6 +203,10 @@ section .img-txt .empresa{
     margin-top: 100px;
 }
 
+.modo-txt {
+    margin-right: 50%;
+}
+
 /* Abrir e fechar barra de navegação */
 .navbar section .alternar{
     position: absolute;
@@ -218,7 +246,6 @@ body.dark .navbar section .alternar{
     align-items: center;
     text-decoration: none;
     border-radius: 6px;
-    transition: var(--tran-04);
 }
 
 .navbar li a:hover{
@@ -326,14 +353,10 @@ body.dark .interruptor::before{
 /* Main */
 .home{
     position: relative;
-    left: 80px;
+    left: 90px;
     width: calc(100% - 80px);
     transition: var(--tran-05);
 }
-
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
 
 /* Mobile 430PX */
 @media only screen and (min-width: 430px){
@@ -344,16 +367,14 @@ body.dark .interruptor::before{
     /* Icon Links */
     .navbar li .icon{
         min-width: 63px;
-        font-size: 20px;
     }
 }
 
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-
 /* Tablet 768PX */
 @media only screen and (min-width: 768px){
+    .home{
+        width: calc(100% - 100px);
+    }
     /* Barra fechada */
     .navbar.fechar{
         width: 100px;
@@ -375,10 +396,6 @@ body.dark .interruptor::before{
     .veiculos{
         margin-top: 100px;
     }
-    /* Icon aparelhos */
-    /* .aparelhos{
-        margin-top: 100px;
-    } */
     /* Icon login */
     .login{
         margin-top: 200px;
@@ -390,17 +407,10 @@ body.dark .interruptor::before{
     .alternar-interruptor .interruptor{
         margin-right: 7px;
     }
-    .navbar.fechar .menu-bar .modo{
-        margin-left: -5%;
-    }
     .menu-bar .modo{
         margin-bottom: 10%;
     }
 }
-
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
 
 /* Tablet 820PX */
 @media only screen and (min-width: 820px){
@@ -450,10 +460,6 @@ body.dark .interruptor::before{
     }
 }
 
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-
 /* Desktop 1024PX */
 @media only screen and (min-width: 1024px){
     /* Barra aberta */
@@ -470,18 +476,14 @@ body.dark .interruptor::before{
     /* Logo barra fechada */
     .navbar.fechar .img-txt .logo{
         width: 40px;
-        margin-right: 50px;
     }
     /* Icon Links barra fechada */
     .navbar.fechar li .icon{
         min-width: 20px;
-        font-size: 20px;
-        margin-left: 13px;
     }
     /* Links barra fechada*/
     .navbar.fechar li a{
         height: 40px;
-        margin-left: -10px;
         width: 47px;
     }
     /* Links */
@@ -494,7 +496,7 @@ body.dark .interruptor::before{
     }
     /* Container logo */
     .img-txt{
-        margin-top: 10%;
+        margin-top: 2.5vh;
         font-size: 50px;
     }
     /* Container nome e slogan */
@@ -508,21 +510,11 @@ body.dark .interruptor::before{
     .alternar-interruptor .interruptor{
         margin-right: 15%;
     }
-    .navbar.fechar .menu-bar .modo{
-        margin-left: -48%;
-    }
 }
-
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
-/* ----------------------------------------------------------- */
 
 /* Desktop 1366PX */
 @media only screen and (min-width: 1366px){
     .alternar-interruptor .interruptor{
         margin-right: 10%;
-    }
-    .navbar.fechar .menu-bar .modo{
-        margin-left: -55%;
     }
 }

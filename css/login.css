@@ -237,9 +237,11 @@ a{
     color: #EC3540;
     margin-left: 6%;
     margin-top: 5%;
+    cursor: pointer;
 }
 .esqueci:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .btn-entrar{
@@ -812,9 +814,11 @@ a{
         color: #EC3540;
         margin-left: 3%;
         margin-top: 5%;
+        cursor: pointer;
     }
     .esqueci-desk:hover{
         text-decoration: underline;
+        cursor: pointer;
     }
     
     .btn-entrar-desk{
