@@ -79,13 +79,6 @@ body.dark{
     color: var(--text-color);
     transition: var(--tran-03);
     white-space: nowrap;
-    opacity: 1;
-}
-
-/* Texto fechado */
-.navbar.fechar .txt{
-    opacity: 0;
-    display: none;
 }
 
 .navbar.fechar .menu-link {
@@ -141,14 +134,27 @@ body.dark{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 60px;
+    min-width: 70px;
+    font-size: 25px;
 }
 
 /* Icon e texto links */
 .navbar li .icon,
 .navbar li .txt{
     color: var(--text-color);
-    transition: var(--tran-02);
+}
+
+.navbar.fechar li .txt,
+.navbar.fechar .empresa .nome {
+    opacity: 0;
+    display: none;
+    transition: width 2s ease-in-out;
+}
+.empresa .nome,
+.navbar li .txt {
+    opacity: 1;
+    display: block;
+    transition: display 2s ease-in-out;
 }
 
 /* logo */
@@ -364,10 +370,6 @@ body.dark .interruptor::before{
     .navbar.fechar{
         width: 85px;
     }
-    /* Icon Links */
-    .navbar li .icon{
-        min-width: 63px;
-    }
 }
 
 /* Tablet 768PX */
@@ -378,11 +380,6 @@ body.dark .interruptor::before{
     /* Barra fechada */
     .navbar.fechar{
         width: 100px;
-    }
-    /* Icon Links */
-    .navbar li .icon{
-        min-width: 70px;
-        font-size: 25px;
     }
 
     .navbar.fechar li{
