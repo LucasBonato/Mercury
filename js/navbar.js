@@ -2,7 +2,8 @@ const body = document.querySelector("body"),
     navbar = body.querySelector(".navbar"),
     alternar = body.querySelector(".alternar"),
     interruptor = body.querySelector(".alternar-interruptor"),
-    modoTxt = body.querySelector(".modo-txt");
+    modoTxt = body.querySelector(".modo-txt"),
+    slide = body.querySelector("#slider");
 let out = document.querySelector("main");
 
 interruptor.addEventListener("click", changeMode);
@@ -28,3 +29,5 @@ function changeMode() {
         localStorage.setItem('mode', 'light');
     }
 }
+
+slide.addEventListener('dragstart', (e) => e.preventDefault());

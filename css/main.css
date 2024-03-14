@@ -43,9 +43,6 @@ body.dark .cabecalhoE{
 }
 
 /* Slider */
-.container-slider{
-    display: none;
-}
 
 /* Título */
 .titulo{
@@ -265,7 +262,6 @@ body.dark .txt-Fornecedores{
         width: 95%;
         margin-left: auto;
         padding-right: 2.55%;
-        margin-left: 6%;
     }
 }
 
@@ -311,10 +307,6 @@ body.dark .txt-Fornecedores{
     /* Imagem */
     .img-Carro{
         width: 60%;
-    }
-    /* Slide */
-    .txt-Fornecedores{
-        margin-left: 7%;
     }
 }
 

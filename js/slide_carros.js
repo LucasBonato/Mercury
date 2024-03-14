@@ -46,23 +46,3 @@ btnEsq.addEventListener('click', function(){
 setInterval(function(){
     toRight();
 }, 5000);
-
-
-/* 
-function stopSlide(automatico){
-    automatico.preventDeFault();
-}
-window.onload = function(){
-    automatico();
-}
-function automatico(){
-    setInterval(function(){
-        toRight();
-    }, 2000);
-}
-comecar.addEventListener("click", () =>{
-    automatico();
-});
-parar.addEventListener("click", () =>{
-    stopSlide();
-});*/
